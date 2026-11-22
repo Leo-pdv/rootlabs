@@ -49,7 +49,8 @@ h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.035em;line-height:1.05;margin
 .cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px}
 .cat{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .15s}
 .cat:hover{transform:translateY(-3px)}
-.cat .im{height:130px;display:grid;place-items:center;font-size:64px}
+.cat .im{height:170px;overflow:hidden;background:var(--alt)}
+.cat .im img{display:block;width:100%;height:100%;object-fit:cover}
 .cat div:last-child{padding:14px 16px}.cat b{display:block}.cat span{color:var(--mute);font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:16px}
 .pc{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;position:relative}
@@ -131,13 +132,13 @@ footer li:hover{color:#fff}
  <div class="wrap"><div id="noRes" class="na big" hidden>Not available right now.</div></div>
  <div class="sh"><div><h2>Shop by category</h2><p>Find the right inputs for what you grow.</p></div><a class="va" href="#veg">View all</a></div>
  <div class="cats">
-  <a class="cat" href="#veg"><div class="im" style="background:#fde3d3">🍅</div><div><b>Vegetable seeds</b><span>600 products</span></div></a>
-  <a class="cat" href="#flower"><div class="im" style="background:#f9dbe8">🌸</div><div><b>Flower seeds</b><span>296 products</span></div></a>
-  <a class="cat" href="#fruit"><div class="im" style="background:#fff0c2">🍉</div><div><b>Fruit seeds</b><span>260 products</span></div></a>
-  <a class="cat" href="#cats"><div class="im" style="background:#dcefd8">🌿</div><div><b>Exotic &amp; herbs</b><span>17 products</span></div></a>
-  <a class="cat" href="#cats"><div class="im" style="background:#e3e8f6">🧪</div><div><b>Biologicals</b><span>42 products</span></div></a>
-  <a class="cat" href="#cats"><div class="im" style="background:#e9f3d2">🏡</div><div><b>Polyhouse</b><span>39 products</span></div></a>
- </div>
+  <a class="cat" href="#veg"><div class="im"><img src="tomato.jpg" alt="Vegetable seeds" loading="lazy"></div><div><b>Vegetable seeds</b><span>600 products</span></div></a>
+  <a class="cat" href="#flower"><div class="im"><img src="cosmos.jpg" alt="Flower seeds" loading="lazy"></div><div><b>Flower seeds</b><span>296 products</span></div></a>
+  <a class="cat" href="#fruit"><div class="im"><img src="watermelon.jpg" alt="Fruit seeds" loading="lazy"></div><div><b>Fruit seeds</b><span>260 products</span></div></a>
+  <a class="cat" href="#cats"><div class="im"><img src="herbs.jpg" alt="Exotic and herbs" loading="lazy"></div><div><b>Exotic &amp; herbs</b><span>17 products</span></div></a>
+  <a class="cat" href="#cats"><div class="im"><img src="biologicals.jpg" alt="Biologicals" loading="lazy"></div><div><b>Biologicals</b><span>42 products</span></div></a>
+  <a class="cat" href="#cats"><div class="im"><img src="polyhouse.jpg" alt="Polyhouse" loading="lazy"></div><div><b>Polyhouse</b><span>39 products</span></div></a>
+</div>
 </div></section>
 
 <section class="sec alt" id="veg"><div class="wrap"><div class="sh"><div><h2>Vegetable seeds</h2><p>Vegetable seed varieties for farms and kitchen gardens.</p></div><a class="va" href="#veg">View all</a></div><div class="grid" id="g-veg"></div></div></section>
